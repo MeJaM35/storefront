@@ -28,6 +28,9 @@ def Login(request):
 def ProductPage(request):
     return render(request, 'market/product_form.html')
 
+def forgot_password(request):
+    return render(request, 'registeration/forgot_password_page.html')
+
 @login_required(login_url='login')
 def logoutUser(request):
     logout(request)

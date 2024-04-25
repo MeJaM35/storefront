@@ -10,6 +10,12 @@ def index(request):
 def search(request):
     return render(request, 'market/search.html')
 
+def user_profile(request):
+    return render(request, 'registeration/user_profile.html')
+
+def seller_profile(request):
+    return render(request, 'registeration/seller_profile.html')
+
 def cart(request):
     return render(request, 'market/cart.html')
 
